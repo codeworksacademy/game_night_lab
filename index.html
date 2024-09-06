@@ -28,6 +28,23 @@
       <section id="player-list" class="row">
 
       </section>
+      <section class="row">
+        <div class="col-md-6">
+          <form onsubmit="app.PlayersController.addPlayer()">
+            <h2>Add Player</h2>
+            <div class="mb-3">
+              <label for="name" class="form-label">Player Name</label>
+              <input type="text" required maxlength="40" class="form-control" name="name" id="name">
+            </div>
+            <div class="text-end">
+              <button class="btn btn-outline-warning" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="assets/img/undraw_playing_cards_cywn.svg" alt="Playing Cards">
+        </div>
+      </section>
     </div>
   </main>
 

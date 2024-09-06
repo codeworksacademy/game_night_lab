@@ -23,4 +23,15 @@ export class PlayersController {
     this.drawPlayers()
   }
 
+  addPlayer() {
+    event.preventDefault()
+    const playerFormElem = event.target
+    // @ts-ignore
+    const playerName = playerFormElem.name.value
+    playersService.addPlayer(playerName)
+    // @ts-ignore
+    playerFormElem.reset()
+    this.drawPlayers()
+  }
+
 }
