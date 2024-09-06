@@ -5,7 +5,8 @@ import { createObservableProxy } from './utils/ObservableProxy.js'
 class ObservableAppState extends EventEmitter {
 
   players = [
-    new Player('Jake')
+    new Player('Jake'),
+    new Player('Mick')
   ]
 }
 
