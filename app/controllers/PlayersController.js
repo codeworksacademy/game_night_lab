@@ -14,12 +14,12 @@ export class PlayersController {
     playerListElem.innerHTML = playerListHTML
   }
 
-  increasePlayerScore(playerName) {
-    playersService.increasePlayerScore(playerName)
+  increasePlayerScore(playerId) {
+    playersService.increasePlayerScore(playerId)
     this.drawPlayers()
   }
-  decreasePlayerScore(playerName) {
-    playersService.decreasePlayerScore(playerName)
+  decreasePlayerScore(playerId) {
+    playersService.decreasePlayerScore(playerId)
     this.drawPlayers()
   }
 

@@ -6,12 +6,12 @@ class PlayersService {
     const newPlayer = new Player(playerName)
     AppState.players.push(newPlayer)
   }
-  increasePlayerScore(playerName) {
-    const player = AppState.players.find(player => player.name == playerName)
+  increasePlayerScore(playerId) {
+    const player = AppState.players.find(player => player.id == playerId)
     player.score++
   }
-  decreasePlayerScore(playerName) {
-    const player = AppState.players.find(player => player.name == playerName)
+  decreasePlayerScore(playerId) {
+    const player = AppState.players.find(player => player.id == playerId)
     player.score--
     if (player.score < 0) {
       player.score = 0
